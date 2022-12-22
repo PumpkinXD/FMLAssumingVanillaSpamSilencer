@@ -1,14 +1,14 @@
 [
   {
-    "modid": "examplemod",
-    "name": "ExampleMod",
+    "modid": "favspamsilencer",
+    "name": "FMLAssumingVanillaSpamSilencer",
     "description": "example",
     "version": "${version}",
     "mcversion": "${mcversion}",
     "url": "",
     "updateUrl": "",
     "authorList": [
-      "sdxqw"
+      "PumpkinXD"
     ],
     "credits": "Forge,FML,sdxqw",
     "logoFile": "",

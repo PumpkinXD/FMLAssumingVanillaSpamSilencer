@@ -1,6 +1,6 @@
-package io.github.sdxqw.ifmltweaker;
+package io.github.pumpkinxd.favspamsilencer.tweaker;
 
-import io.github.sdxqw.ExampleMod;
+import io.github.pumpkinxd.favspamsilencer.FAVSpamSilencer;
 import net.minecraftforge.fml.relauncher.IFMLLoadingPlugin;
 import org.spongepowered.asm.launch.MixinBootstrap;
 import org.spongepowered.asm.mixin.MixinEnvironment;
@@ -8,6 +8,7 @@ import org.spongepowered.asm.mixin.Mixins;
 
 import java.util.Map;
 
+@SuppressWarnings("unused")
 @IFMLLoadingPlugin.MCVersion(value = "1.8.9")
 public class FMLTweaker implements IFMLLoadingPlugin {
 
@@ -29,7 +30,7 @@ public class FMLTweaker implements IFMLLoadingPlugin {
     @Override
     public void injectData(Map<String, Object> data) {
         MixinBootstrap.init();
-        Mixins.addConfiguration("mixins." + ExampleMod.MOD_ID + ".json");
+        Mixins.addConfiguration("mixins." + FAVSpamSilencer.MOD_ID + ".json");
         MixinEnvironment.getDefaultEnvironment().setObfuscationContext("searge");
     }
 
